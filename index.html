@@ -3,8 +3,47 @@
 <head>
     <title>Figma Test</title>
     <link rel="stylesheet" type="text/css" href="./styles.css" />
-    <script src="index.js"></script>
+    <style>
+        .bodyStyling {
+            background-image: url('background/Asset.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: black;
+            font-family: 'SpecialFont', sans-serif;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15rem;
+        }
+    </style>
 </head>
-<body>
+<body class="bodyStyling">
+    <script>
+        function changeBackground(){
+            document.querySelector('.bodyStyling').style.backgroundColor = 'red'
+            document.querySelector('.bodyStyling').style.backgroundImage = "url(null)"
+            event.preventDefault()
+        }
+    </script>
+    <div>
+        <h1 class="title">What's next<br> for real time conversation?</h1>
+        <p class="para">We are heads down on building this product<br>
+            towards an early alpha launch in Q2 2023.
+            <br>
+            <br>
+            Reserve your handle, share this page and follow us.</p>
+            <form id="form" onsubmit="changeBackground()">
+                <input class="name" type="text" id="name" name="name" placeholder="Name" />
+                <input class="email" type="text" id="email" name="email" placeholder="Email" />
+                <br>
+                <br>
+                <input class="handle" type="text" id="handle" name="handle" placeholder="Handle" />
+                <br>
+                <p class="end-para">By entering the above information you are agreeing to receive<br>
+                    emails from or on the behalf of SPECIAL OFFER. </p>
+                <input class="sub-button" type="submit"></input>
+            </form>
+        </div>
 </body>
 </html>

@@ -1,5 +1,83 @@
-body {
+@font-face {
+    font-family: 'SpecialFont';
+    src: url('woff/SFProDisplay-Regular.woff2.txt') format('woff');
+  }
+
+/* body {
     background-image: url('background/Asset.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: black;
+    font-family: 'SpecialFont', sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15rem;
+  } */
+
+  .title {
+    font-size: 75px;
   }
+
+  .para {
+    font-size: 25px;
+  }
+
+  .end-para {
+    font-size: 20px;
+  }
+
+.name {
+    background-color: black;
+    border: 3px solid gray;
+    border-radius: 15px;
+    color: white;
+    height: 60px;
+    width: 20rem;
+}
+
+.name::placeholder {
+    color: white;
+    padding-left: 1rem;
+}
+
+.email {
+    background-color: black;
+    border: 3px solid gray;
+    border-radius: 15px;
+    color: white;
+    height: 60px;
+    width: 20rem;
+
+}
+.email::placeholder {
+    color: white;
+    padding-left: 1rem;
+}
+
+.handle {
+    background-color: black;
+    border: 3px solid green;
+    border-radius: 15px;
+    color: white;
+    height: 60px;
+    width: 40.7rem;
+
+}
+
+.handle::placeholder {
+    color: white;
+    padding-left: 1rem;
+}
+
+.sub-button {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    height: 60px;
+    width: 20rem;
+}
